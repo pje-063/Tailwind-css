@@ -3,6 +3,7 @@ Created with CodeSandbox
 # Portfolio Website - Tailwind CSS
 This is a personal portfolio website built using HTML and Tailwind CSS.
 It includes sections like Home,About Me,Projects and Contact.
+Tailwind CSS is used via CDN for styling.
 # Features
 > Responsive layout using Tailwind CSS
 > Clean design with flex and Grid
