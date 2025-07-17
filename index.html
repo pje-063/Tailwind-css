@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      }
+    </script>
+  </head>
+  <body class="bg-grey-100 scroll-smooth">
+    <!-- ✅ Responsive Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-blue-600">Vidya Vijay</h1>
+        <ul class="hidden md:flex gap-6">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+        <button class="md:hidden text-gray-700" onclick="toggleMenu()">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </nav>
+      <!-- ✅ Mobile Nav -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <ul class="flex flex-col gap-4 text-gray-700 font-medium">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ✅ Main Content Starts -->
+    <main>
+      <!-- ✅ Home Section -->
+      <section id="home" class="bg-gray-200 py-16 text-center">
+        <img
+          src="https://placehold.co/150x150?text=Avatar"
+          alt="Avatar"
+          class="w-32 h-32 rounded-full mx-auto mb-4"
+        />
+        <h2 class="text-4xl font-bold mb-2">Hi, I'm Vidya Vijay</h2>
+        <p class="text-lg text-gray-700 italic">"Code is my canvas."</p>
+        <a
+          href="resume.pdf"
+          class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800"
+          >Download Resume</a
+        >
+      </section>
+
+      <!-- ✅ About Section -->
+      <section id="about" class="bg-white py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+          <p class="text-gray-700 mb-4 text-justify">
+            I am an aspiring web developer passionate about building responsive
+            and interactive websites. I love solving real-world problems and am
+            currently working on full-stack projects using the MERN stack.
+          </p>
+          <p class="text-gray-700 mb-6 text-justify">
+            I'm interested in AI, UI/UX, and cloud technologies. My goal is to
+            become a full-stack developer contributing to impactful software.
+          </p>
+          <h3 class="text-xl font-semibold mt-6 mb-2">Skills:</h3>
+          <div class="flex flex-wrap gap-3">
+            <span
+              class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+              >HTML</span
+            >
+            <span
+              class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+              >CSS</span
+            >
+            <span
+              class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+              >Tailwind CSS</span
+            >
+            <span
+              class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+              >JavaScript</span
+            >
+          </div>
+          <h3 class="text-xl font-semibold mt-6 mb-2">
+            Education & Experience:
+          </h3>
+          <ul class="space-y-2">
+            <li class="bg-gray-100 p-3 rounded">
+              🎓 B.Tech in CSE (2022–2026) - XYZ University
+            </li>
+            <li class="bg-gray-100 p-3 rounded">
+              💼 Web Development Intern - ABC Company
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ✅ Projects Section -->
+      <section id="projects" class="bg-gray-50 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div
+              class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl hover:scale-105 transition transform"
+            >
+              <img
+                src="https://placehold.co/300x200?text=Project+1"
+                alt="Project Screenshot"
+                class="w-full h-40 object-cover mb-4 rounded"
+              />
+              <h3 class="text-xl font-semibold text-center">
+                E-Commerce Website
+              </h3>
+              <p class="text-gray-600 mt-2 text-center">
+                An online shopping site with cart and product pages.
+              </p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Tailwind, JavaScript</span>
+                <a
+                  href="#"
+                  class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+                  >View</a
+                >
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div
+              class="bg-white shadow-md rounded-lg p-6 hover:scale-105 transition"
+            >
+              <img
+                src="https://placehold.co/300x200?text=Project+2"
+                alt="Project Screenshot"
+                class="w-full h-40 object-cover mb-4 rounded"
+              />
+              <h3 class="text-xl font-semibold text-center">To-Do List App</h3>
+              <p class="text-gray-600 mt-2 text-center">
+                A productivity app to manage daily tasks with a clean UI.
+              </p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="text-sm text-gray-500">HTML, JS</span>
+                <a
+                  href="#"
+                  class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+                  >View</a
+                >
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div
+              class="bg-white shadow-md rounded-lg p-6 hover:scale-105 transition"
+            >
+              <img
+                src="https://placehold.co/300x200?text=Project+3"
+                alt="Project Screenshot"
+                class="w-full h-40 object-cover mb-4 rounded"
+              />
+              <h3 class="text-xl font-semibold text-center">
+                Portfolio Website
+              </h3>
+              <p class="text-gray-600 mt-2 text-center">
+                A personal website built using only Tailwind CSS and HTML.
+              </p>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="text-sm text-gray-500">HTML, Tailwind</span>
+                <a
+                  href="#"
+                  class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+                  >View</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Contact Section -->
+      <section id="contact" class="bg-white py-16 px-4">
+        <div class="max-w-md mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                placeholder="Your name"
+                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                placeholder="Your email"
+                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                rows="4"
+                placeholder="Your message"
+                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+      <h3 class="text-lg font-semibold">Connect with me</h3>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="text-blue-400 hover:underline">LinkedIn</a>
+        <a href="#" class="text-blue-400 hover:underline">GitHub</a>
+        <a href="#" class="text-blue-400 hover:underline">Twitter</a>
+      </div>
+      <p class="mt-4 text-sm text-gray-400">
+        &copy; 2024 Vidya Vijay. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
